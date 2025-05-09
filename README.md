@@ -1,4 +1,4 @@
-# CasaOS AppStore
+# CaaaFixed - A Fork Of The CasaOS AppStore
 
 [![GitHub issues by-label](https://img.shields.io/github/issues/IceWhaleTech/CasaOS-AppStore/help%20wanted?label=help%20wanted&style=for-the-badge)](https://github.com/IceWhaleTech/CasaOS-AppStore/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![GitHub contributors](https://img.shields.io/github/contributors/IceWhaleTech/CasaOS-AppStore?style=for-the-badge)](https://github.com/IceWhaleTech/CasaOS-AppStore/graphs/contributors)
 
@@ -21,6 +21,12 @@ Simply copy the provided source link and add it to your CasaOS settings to acces
 - [Awesome Store list](https://awesome.casaos.io/content/3rd-party-app-stores/list.html)
 
 ## Contributors
+
+<a href="https://github.com/StuffzEZ/CasaFixed/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=StuffzEZ/CasaFixed" />
+</a>
+
+## OFFICIAL CASAOS APP STORE CONTRIBUTORS
 
 <a href="https://github.com/IceWhaleTech/CasaOS-AppStore/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=IceWhaleTech/CasaOS-AppStore" />
