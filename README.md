@@ -1,6 +1,6 @@
 # CaaaFixed - A Fork Of The CasaOS AppStore
 
-[![GitHub issues by-label](https://img.shields.io/github/issues/IceWhaleTech/CasaOS-AppStore/help%20wanted?label=help%20wanted&style=for-the-badge)](https://github.com/IceWhaleTech/CasaOS-AppStore/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![GitHub contributors](https://img.shields.io/github/contributors/IceWhaleTech/CasaOS-AppStore?style=for-the-badge)](https://github.com/IceWhaleTech/CasaOS-AppStore/graphs/contributors)
+[![GitHub issues by-label](https://img.shields.io/github/issues/StuffzEZ/CasaFixed/help%20wanted?label=help%20wanted&style=for-the-badge)](https://github.com/StuffzEZ/CasaFixed/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![GitHub contributors](https://img.shields.io/github/contributors/StuffzEZ/CasaFixed?style=for-the-badge)](https://github.com/StuffzEZ/CasaFixed/graphs/contributors)
 
 CasaOS AppStore needs your help to grow:
 
