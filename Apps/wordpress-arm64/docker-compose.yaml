@@ -1,0 +1,85 @@
+name: trusting_zakir
+services:
+  db:
+    cpu_shares: 90
+    command: []
+    container_name: mariadb
+    deploy:
+      resources:
+        limits:
+          memory: 19957M
+    environment:
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_PASSWORD=fhds894h3ajkVKAJFG673bjh
+      - MYSQL_ROOT_PASSWORD=gf7432gkjsahmbn37HJAGKh37@
+      - MYSQL_USER=casaos
+    hostname: mariadb
+    image: mariadb:10.5
+    labels:
+      icon: https://icon.casaos.io/main/all/wordpress.png
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/trusting_zakir/mysql
+        target: /var/lib/mysql
+    ports: []
+    devices: []
+    cap_add: []
+    networks:
+      - app-network
+    privileged: false
+  wordpress:
+    cpu_shares: 90
+    command: []
+    container_name: wordpress
+    depends_on:
+      db:
+        condition: service_started
+        required: true
+    deploy:
+      resources:
+        limits:
+          memory: 19957M
+    environment:
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_NAME=wordpress
+      - WORDPRESS_DB_PASSWORD=fhds894h3ajkVKAJFG673bjh
+      - WORDPRESS_DB_USER=casaos
+    hostname: wordpress
+    image: arm64v8/wordpress:6.8.0
+    labels:
+      icon: https://icon.casaos.io/main/all/wordpress.png
+    ports:
+      - target: 80
+        published: "8080"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/trusting_zakir/html
+        target: /var/www/html
+    devices: []
+    cap_add: []
+    networks:
+      - app-network
+    privileged: false
+networks:
+  app-network:
+    name: trusting_zakir_app-network
+    driver: bridge
+x-casaos:
+  author: self
+  category: self
+  hostname: ""
+  icon: https://icon.casaos.io/main/all/wordpress.png
+  index: /
+  is_uncontrolled: false
+  port_map: "8080"
+  scheme: http
+  store_app_id: trusting_zakir
+  title:
+    custom: "Wordpress Fixed"
+  tips:
+    before_install:
+      en_us: 
+        EXPOSE PORT 8080 AND 3306. REMEMBER TO CHANGE PASSWORDS. ONLY WORKS (ONLY TESTED TO WORK) ON IP ADDRESS - OTHERWISE, DB ERROR.
